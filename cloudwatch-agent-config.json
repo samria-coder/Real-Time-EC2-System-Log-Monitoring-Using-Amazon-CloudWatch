@@ -1,0 +1,19 @@
+{
+  "agent": {
+    "metrics_collection_interval": 60,
+    "run_as_user": "root"
+  },
+  "metrics": {
+    "namespace": "MyEC2Metrics",
+    "metrics_collected": {
+      "cpu": {
+        "measurement": [
+          {"name": "cpu_usage_idle", "rename": "CPU Idle"},
+          {"name": "cpu_usage_user", "rename": "CPU User"},
+          {"name": "cpu_usage_system", "rename": "CPU System"}
+        ],
+        "metrics_collection_interval": 60
+      }
+    }
+  }
+}
